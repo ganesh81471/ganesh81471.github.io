@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avala Ganesh Yadav — Embedded Firmware Engineer</title>
+<meta name="description" content="Embedded firmware engineer building on ESP32/STM32 — from PCB schematic to shipped firmware, plus the automation tooling to back it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blueprint-grid"></div>
+
+<nav class="topnav">
+  <span class="topnav-mark">AGY</span>
+  <div class="topnav-links">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="sheet-label sheet-label--top">
+    <span>SHEET 01 / 05</span><span>REV A</span>
+  </div>
+  <div class="hero-columns">
+  <div class="hero-inner">
+    <p class="eyebrow">EMBEDDED FIRMWARE ENGINEER</p>
+    <h1 class="hero-title">Avala Ganesh<br>Yadav</h1>
+    <p class="hero-sub">
+      I take products from a KiCad schematic to shipped firmware — ESP32 and STM32F4,
+      sensor drivers, real-time control loops — and I build the tooling to back it,
+      like the automation system that runs my own job search.
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/ganesh81471" class="link-btn link-btn--filled" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/avala-ganesh-yadav-16079a269/" class="link-btn" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:ganeshyadav07ks@gmail.com" class="link-btn">Email</a>
+    </div>
+  </div>
+  <div class="hero-schematic" aria-hidden="true">
+    <svg viewBox="0 0 520 420" class="schematic-svg" id="heroSvg">
+      <!-- quadruped schematic-style line art: body, 4 legs each with 2 joints, MCU box, signal traces -->
+      <g class="draw-group">
+        <rect x="210" y="150" width="100" height="60" rx="4" class="s-rect"/>
+        <text x="260" y="185" text-anchor="middle" class="s-label">ESP32</text>
+
+        <!-- legs: each leg = hip line + knee line + foot, with a joint circle -->
+        <!-- front-left -->
+        <path d="M210 165 L140 130 L95 95" class="s-line"/>
+        <circle cx="140" cy="130" r="5" class="s-joint"/>
+        <circle cx="95" cy="95" r="4" class="s-joint s-joint--foot"/>
+        <!-- front-right -->
+        <path d="M310 165 L380 130 L425 95" class="s-line"/>
+        <circle cx="380" cy="130" r="5" class="s-joint"/>
+        <circle cx="425" cy="95" r="4" class="s-joint s-joint--foot"/>
+        <!-- back-left -->
+        <path d="M210 195 L140 250 L95 300" class="s-line"/>
+        <circle cx="140" cy="250" r="5" class="s-joint"/>
+        <circle cx="95" cy="300" r="4" class="s-joint s-joint--foot"/>
+        <!-- back-right -->
+        <path d="M310 195 L380 250 L425 300" class="s-line"/>
+        <circle cx="380" cy="250" r="5" class="s-joint"/>
+        <circle cx="425" cy="300" r="4" class="s-joint s-joint--foot"/>
+
+        <!-- signal traces radiating from MCU, dashed like schematic nets -->
+        <path d="M210 170 L170 170" class="s-trace"/>
+        <path d="M310 170 L350 170" class="s-trace"/>
+        <path d="M230 150 L230 100 L120 100" class="s-trace"/>
+        <path d="M290 150 L290 100 L400 100" class="s-trace"/>
+
+        <!-- dimension-style ticks along the bottom, like a drawing scale bar -->
+        <path d="M60 360 L460 360" class="s-dim"/>
+        <path d="M60 354 L60 366" class="s-dim"/>
+        <path d="M460 354 L460 366" class="s-dim"/>
+        <text x="260" y="382" text-anchor="middle" class="s-dim-label">8-DOF QUADRUPED — SCALE NTS</text>
+      </g>
+    </svg>
+  </div>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="sheet-label">
+    <span>SHEET 02 / 05 — ABOUT</span><span>SCALE 1:1</span>
+  </div>
+  <div class="about-grid">
+    <div class="about-copy">
+      <h2 class="section-title">Close to the hardware,<br>comfortable in the tooling.</h2>
+      <p>
+        I'm an embedded software developer working across ESP32 and STM32F4 —
+        driver-level sensor integration, interrupt-driven firmware, real-time
+        control loops, and the PCB the firmware actually runs on. Currently
+        building the C++/Embedded C firmware layer for ESP32-based robotic
+        products at K12 Techno Services, where I own the stack end to end
+        rather than one module of it.
+      </p>
+      <p>
+        The same instinct that makes me want to understand a system fully —
+        not just the part assigned to me — is why I built a full automation
+        pipeline for my own job search instead of manually checking five job
+        boards a day. Both projects on this page came from the same place:
+        seeing a slow, manual process and building the thing that removes it.
+      </p>
+    </div>
+    <dl class="about-facts">
+      <div><dt>Based in</dt><dd>Bengaluru, India</dd></div>
+      <div><dt>Currently</dt><dd>Robotics SME (R&D), K12 Techno Services</dd></div>
+      <div><dt>Education</dt><dd>B.E. Electronics &amp; Communication — MVJ College of Engineering, 2021–2025</dd></div>
+      <div><dt>Core stack</dt><dd>Embedded C/C++, ESP32, STM32F4, KiCad</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section class="section" id="work">
+  <div class="sheet-label">
+    <span>SHEET 03 / 05 — FEATURED WORK</span><span>2 OF 2 SHOWN</span>
+  </div>
+  <h2 class="section-title section-title--center">Featured Projects</h2>
+
+  <!-- PROJECT 1: ROBODOG -->
+  <article class="project project--robodog">
+    <div class="project-header">
+      <span class="project-index">01</span>
+      <div>
+        <h3 class="project-title">RoboDog — Quadruped Robot</h3>
+        <p class="project-tagline">Custom PCB, from schematic to routed board to walking hardware.</p>
+      </div>
+    </div>
+
+    <div class="project-media">
+      <img src="assets/images/robodog-pcb-3d.png" alt="3D render of the RoboDog custom PCB showing the ESP32, PCA9685 servo driver, and power section" class="project-media-main">
+      <div class="project-media-strip">
+        <img src="assets/images/robodog-schematic.png" alt="Full KiCad schematic for RoboDog: power section, ESP32-WROOM, servo connectors, decoupling network">
+        <img src="assets/images/robodog-pcb-routing.png" alt="KiCad PCB routing view for RoboDog board">
+      </div>
+    </div>
+
+    <div class="project-body">
+      <p>
+        An 8-servo quadruped built around a PCB I designed myself in KiCad —
+        not a breadboard prototype. The board integrates an ESP32-WROOM,
+        a PCA9685 PWM driver for all 8 servo channels, dual buck converters
+        for clean regulated power, and a decoupling network sized to keep
+        every servo's power rail stable under load. Schematic-to-layout
+        ownership: four functional sections (power, MCU, decoupling, servo
+        connectors), routed and fabricated.
+      </p>
+      <div class="chip-row">
+        <span class="chip">ESP32-WROOM</span>
+        <span class="chip">PCA9685</span>
+        <span class="chip">KiCad</span>
+        <span class="chip">PCB Design</span>
+        <span class="chip">Power Electronics</span>
+        <span class="chip">C++</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT 2: JOB SEARCH AUTOMATION -->
+  <article class="project project--jobsearch">
+    <div class="project-header">
+      <span class="project-index">02</span>
+      <div>
+        <h3 class="project-title">Embedded Job Search Automation</h3>
+        <p class="project-tagline">A multi-source job aggregator that doesn't trust "Entry level" tags.</p>
+      </div>
+    </div>
+
+    <div class="project-media project-media--single">
+      <img src="assets/images/dashboard-screenshot.png" alt="Live dashboard of the job search automation tool showing 107 tracked listings, filters, and application status" class="project-media-main">
+    </div>
+
+    <div class="project-body">
+      <p>
+        LinkedIn's "Entry level" tag is unreliable — plenty of roles tagged
+        that way actually want 2–8 years once you read the JD. I built a
+        pipeline that scrapes LinkedIn, Indeed, Naukri, direct company career
+        pages, and Greenhouse/Lever's public APIs, then reads each job's real
+        title and description to reject senior-disguised-as-entry postings
+        before they're ever saved — not just keyword-matched, actually
+        experience-filtered. Runs on a schedule, pings my phone on Telegram
+        when it's done, and I review results in a Streamlit dashboard instead
+        of a terminal.
+      </p>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">Playwright</span>
+        <span class="chip">SQLite</span>
+        <span class="chip">Streamlit</span>
+        <span class="chip">Telegram Bot API</span>
+      </div>
+      <a href="https://github.com/ganesh81471/job-search-automation" class="link-btn link-btn--filled" target="_blank" rel="noopener">View repo ↗</a>
+    </div>
+  </article>
+
+  <!-- OTHER PROJECTS -->
+  <div class="other-projects">
+    <h3 class="other-projects-title">Other builds</h3>
+    <div class="other-projects-grid">
+      <div class="mini-project">
+        <p class="mini-project-title">Desktop Expressive Robot</p>
+        <p class="mini-project-desc">Interrupt-driven wake-on-tap driver using MPU6050 threshold detection, with a real-time I2C sensor-to-OLED expression pipeline.</p>
+        <div class="chip-row chip-row--small">
+          <span class="chip chip--small">ESP32</span><span class="chip chip--small">MPU6050</span><span class="chip chip--small">OLED</span><span class="chip chip--small">I2C</span>
+        </div>
+      </div>
+      <div class="mini-project">
+        <p class="mini-project-title">FreeRTOS Task Monitor</p>
+        <p class="mini-project-desc">3-task FreeRTOS app with queue-based inter-task communication, reporting per-task CPU%, stack high-watermark, and scheduler state over UART.</p>
+        <div class="chip-row chip-row--small">
+          <span class="chip chip--small">STM32F407</span><span class="chip chip--small">FreeRTOS</span><span class="chip chip--small">UART</span>
+        </div>
+      </div>
+      <div class="mini-project">
+        <p class="mini-project-title">GPS/GSM Vehicle Tracker</p>
+        <p class="mini-project-desc">End-to-end hardware integration on ESP32 — module bring-up through UART acquisition firmware to data delivery over SMS.</p>
+        <div class="chip-row chip-row--small">
+          <span class="chip chip--small">ESP32</span><span class="chip chip--small">GPS/GSM</span><span class="chip chip--small">UART</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="sheet-label">
+    <span>SHEET 04 / 05 — SKILLS</span><span>COMPONENT LIST</span>
+  </div>
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <p class="skill-group-label">Languages</p>
+      <div class="chip-row"><span class="chip">Embedded C</span><span class="chip">C++</span><span class="chip">Python</span></div>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-label">Platforms</p>
+      <div class="chip-row"><span class="chip">ESP32 / ESP-IDF</span><span class="chip">STM32F4</span><span class="chip">STM32CubeIDE</span></div>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-label">Protocols</p>
+      <div class="chip-row"><span class="chip">UART</span><span class="chip">SPI</span><span class="chip">I2C</span><span class="chip">PWM</span><span class="chip">ADC</span><span class="chip">MQTT</span></div>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-label">Systems</p>
+      <div class="chip-row"><span class="chip">FreeRTOS</span><span class="chip">PID Control</span><span class="chip">Interrupt-driven drivers</span></div>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-label">Hardware</p>
+      <div class="chip-row"><span class="chip">KiCad</span><span class="chip">PCB Layout</span><span class="chip">Component Selection</span></div>
+    </div>
+    <div class="skill-group">
+      <p class="skill-group-label">Tooling</p>
+      <div class="chip-row"><span class="chip">Git</span><span class="chip">Linux / Bash</span><span class="chip">Playwright</span><span class="chip">Streamlit</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="sheet-label">
+    <span>SHEET 05 / 05 — CONTACT</span><span>END OF DRAWING</span>
+  </div>
+  <h2 class="section-title section-title--center">Let's talk</h2>
+  <p class="footer-sub">Open to embedded firmware and robotics roles — Bengaluru, Hyderabad, Chennai, or remote.</p>
+  <div class="hero-links footer-links">
+    <a href="mailto:ganeshyadav07ks@gmail.com" class="link-btn link-btn--filled">ganeshyadav07ks@gmail.com</a>
+    <a href="https://www.linkedin.com/in/avala-ganesh-yadav-16079a269/" class="link-btn" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="https://github.com/ganesh81471" class="link-btn" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+  <div class="title-block">
+    <div><span>DRAWN BY</span><strong>A. Ganesh Yadav</strong></div>
+    <div><span>SHEET</span><strong>1/1</strong></div>
+    <div><span>SIZE</span><strong>A4</strong></div>
+    <div><span>REV</span><strong>A</strong></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
