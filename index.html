@@ -16,6 +16,7 @@
 <nav class="topnav">
   <span class="topnav-mark">AGY</span>
   <div class="topnav-links">
+    <a href="#experience">Experience</a>
     <a href="#work">Work</a>
     <a href="#skills">Skills</a>
     <a href="#about">About</a>
@@ -26,7 +27,7 @@
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <div class="sheet-label sheet-label--top">
-    <span>SHEET 01 / 05</span><span>REV B</span>
+    <span>SHEET 01 / 06</span><span>REV C</span>
   </div>
   <div class="hero-columns">
   <div class="hero-inner">
@@ -40,7 +41,7 @@
       process, build the thing that removes it.
     </p>
     <div class="hero-links">
-      <a href="https://github.com/ganesh81471" class="link-btn link-btn--filled" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://github.com/ganesh81471" class="link-btn" target="_blank" rel="noopener">GitHub ↗</a>
       <a href="https://www.linkedin.com/in/avala-ganesh-yadav-16079a269/" class="link-btn" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a href="mailto:ganeshyadav07ks@gmail.com" class="link-btn">Email</a>
     </div>
@@ -79,7 +80,7 @@
 <!-- ============ ABOUT ============ -->
 <section class="section" id="about">
   <div class="sheet-label">
-    <span>SHEET 02 / 05 — ABOUT</span><span>SCALE 1:1</span>
+    <span>SHEET 02 / 06 — ABOUT</span><span>SCALE 1:1</span>
   </div>
   <div class="about-grid">
     <div class="about-copy">
@@ -95,11 +96,6 @@
         filters my own job search so I don't have to check five sites by hand
         every day.
       </p>
-      <p>
-        Most recently, I was a Robotics SME (R&amp;D) at K12 Techno Services,
-        building the C++/Embedded C firmware layer for ESP32-based robotic
-        products — owning the stack end to end rather than one module of it.
-      </p>
     </div>
     <dl class="about-facts">
       <div><dt>Based in</dt><dd>Bengaluru, India</dd></div>
@@ -110,10 +106,44 @@
   </div>
 </section>
 
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="sheet-label">
+    <span>SHEET 03 / 06 — EXPERIENCE</span><span>2 ROLES</span>
+  </div>
+  <h2 class="section-title">Experience</h2>
+  <div class="exp-list">
+    <div class="exp-item">
+      <div class="exp-when">Nov 2025 – Jun 2026</div>
+      <div class="exp-what">
+        <h3 class="exp-role">Robotics – Subject Matter Expert (R&D)</h3>
+        <p class="exp-company">K12 Techno Services Pvt. Ltd., Bengaluru</p>
+        <ul class="exp-bullets">
+          <li>Owned the C++/Embedded C firmware layer for ESP32-based robotic products — sensor drivers through real-time peripheral control, full stack per build, not isolated modules.</li>
+          <li>Designed and tuned a closed-loop control system (MPU6050 feedback + PID) for a self-balancing robot, holding stability within ~±5° tilt.</li>
+          <li>Wrote interrupt-driven drivers integrating 5+ sensor types into ESP32 firmware, cutting input response latency.</li>
+          <li>Implemented synchronized multi-servo locomotion on a quadruped robot, resolving gait instability through per-leg timing calibration.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-when">Nov 2024 – Oct 2025</div>
+      <div class="exp-what">
+        <h3 class="exp-role">Embedded Intern</h3>
+        <p class="exp-company">Roborosx Omni Tech Solutions LLP, Bengaluru</p>
+        <ul class="exp-bullets">
+          <li>Built a GPS/GSM vehicle tracking system on ESP32 — hardware integration end-to-end, from module bring-up to data delivery over SMS.</li>
+          <li>Wrote UART acquisition firmware in Embedded C; used Linux shell and Bash scripting for serial debugging and flashing workflows.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FEATURED WORK ============ -->
 <section class="section" id="work">
   <div class="sheet-label">
-    <span>SHEET 03 / 05 — WORK</span><span>3 PILLARS · 5 PROJECTS</span>
+    <span>SHEET 04 / 06 — WORK</span><span>3 PILLARS · 5 PROJECTS</span>
   </div>
   <h2 class="section-title section-title--center">Work</h2>
   <p class="pillars-intro">Deeper writeups, full image galleries, and wiring diagrams live in each repo — this page is the overview.</p>
@@ -154,7 +184,7 @@
         <div class="chip-row">
           <span class="chip">ESP32</span><span class="chip">MPU6050</span><span class="chip">OLED</span><span class="chip">I2C</span>
         </div>
-        <a href="https://github.com/ganesh81471/Desktop-Bot" class="link-btn" target="_blank" rel="noopener">View repo ↗</a>
+        <a href="https://github.com/ganesh81471/Desktop-Bot" class="link-btn link-btn--filled" target="_blank" rel="noopener">View repo ↗</a>
       </div>
     </article>
   </div>
@@ -185,15 +215,17 @@
 
     <article class="project project--minor">
       <div class="project-body">
-        <h4 class="project-title">GPS/GSM Vehicle Tracker</h4>
+        <h4 class="project-title">GPS Vehicle Tracking System</h4>
         <p>
-          End-to-end hardware integration on ESP32 — module bring-up through
-          UART acquisition firmware to location data delivery over SMS, built
-          during my internship at Roborosx Omni Tech Solutions.
+          Real-time GPS tracker on Arduino Mega with accident and overspeed
+          detection — an ADXL335 accelerometer flags impacts above 2.5g, and
+          SIM800L sends an SMS with a live Google Maps link within seconds.
+          Built during my internship at Roborosx Omni Tech Solutions.
         </p>
         <div class="chip-row">
-          <span class="chip">ESP32</span><span class="chip">GPS/GSM</span><span class="chip">UART</span>
+          <span class="chip">Arduino Mega</span><span class="chip">NEO-6M GPS</span><span class="chip">SIM800L GSM</span><span class="chip">ADXL335</span>
         </div>
+        <a href="https://github.com/ganesh81471/GPS-Vehicle-Tracking-System" class="link-btn link-btn--filled" target="_blank" rel="noopener">View repo ↗</a>
       </div>
     </article>
   </div>
@@ -232,7 +264,7 @@
 <!-- ============ SKILLS ============ -->
 <section class="section" id="skills">
   <div class="sheet-label">
-    <span>SHEET 04 / 05 — SKILLS</span><span>COMPONENT LIST</span>
+    <span>SHEET 05 / 06 — SKILLS</span><span>COMPONENT LIST</span>
   </div>
   <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
@@ -266,12 +298,20 @@
 <!-- ============ CONTACT / FOOTER ============ -->
 <footer class="footer" id="contact">
   <div class="sheet-label">
-    <span>SHEET 05 / 05 — CONTACT</span><span>END OF DRAWING</span>
+    <span>SHEET 06 / 06 — CONTACT</span><span>END OF DRAWING</span>
   </div>
   <h2 class="section-title section-title--center">Let's talk</h2>
-  <p class="footer-sub">Open to embedded, IoT, and automation/tooling roles — Bengaluru, Hyderabad, Chennai, or remote.</p>
+  <div class="seeking-list">
+    <p class="seeking-label">Seeking opportunities in</p>
+    <ul>
+      <li>Embedded Firmware</li>
+      <li>IoT Systems</li>
+      <li>Python Automation</li>
+    </ul>
+    <p class="footer-sub">Bengaluru, Hyderabad, Chennai, or remote.</p>
+  </div>
   <div class="hero-links footer-links">
-    <a href="mailto:ganeshyadav07ks@gmail.com" class="link-btn link-btn--filled">ganeshyadav07ks@gmail.com</a>
+    <a href="mailto:ganeshyadav07ks@gmail.com" class="link-btn">ganeshyadav07ks@gmail.com</a>
     <a href="https://www.linkedin.com/in/avala-ganesh-yadav-16079a269/" class="link-btn" target="_blank" rel="noopener">LinkedIn ↗</a>
     <a href="https://github.com/ganesh81471" class="link-btn" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
@@ -279,7 +319,7 @@
     <div><span>DRAWN BY</span><strong>A. Ganesh Yadav</strong></div>
     <div><span>SHEET</span><strong>1/1</strong></div>
     <div><span>SIZE</span><strong>A4</strong></div>
-    <div><span>REV</span><strong>B</strong></div>
+    <div><span>REV</span><strong>C</strong></div>
   </div>
 </footer>
 
